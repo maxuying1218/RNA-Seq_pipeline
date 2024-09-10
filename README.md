@@ -41,3 +41,9 @@ Rscript  2.PCA_cal_plot.R -i count_matrix -o output.pdf --labels c1,c2,c3,t1,t2 
                 Show this help message and exit
 ```
 ### Step2 calculate DEGs
+[1.DESeq_pipeline.sh](https://github.com/maxuying1218/RNA-Seq_pipeline/blob/main/2.DEGs_calculating/1.DESeq_pipeline.sh) is a script to use DESeq2 R package to calculate DEGs and draw volcano plots.Here is an example:  
+![image](https://github.com/maxuying1218/RNA-Seq_pipeline/blob/main/figures/2.DEGs_volcano_example.png)
+The code is stored at [2.DEGs_calculating](./2.DEGs_calculating).  
+
+#### Usage
+sh 1.DESeq_pipeline.sh count_files out_dir out_label sample_labels
