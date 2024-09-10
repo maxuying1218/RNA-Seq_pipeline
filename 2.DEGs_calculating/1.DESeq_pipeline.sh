@@ -9,7 +9,6 @@ out_dir=`cd $out_dir|pwd`/${out_dir}
 DESeq_out_dir=${out_dir}/1.DESeq_out
 DESeq_5col_dir=${out_dir}/2.DESeq_5col
 DESeq_3col_dir=${out_dir}/2.DESeq_3col
-MA_dir=${out_dir}/3.MAplot
 volcano_dir=${out_dir}/4.volcano_plot
 
 mkdir -p ${DESeq_out_dir} ${DESeq_5col_dir} $DESeq_3col_dir $MA_dir $volcano_dir
