@@ -6,7 +6,7 @@ A RNA-Seq pipeline
 - For DEGs calculating: DESeq2, optparse  
 - For plot: FactoMineR, ggplot2, ggrepel
 
-###Pipeline Workflow
+### Pipeline workflow
 ![image](https://github.com/maxuying1218/RNA-Seq_pipeline/blob/main/figures/workflow.png)
 
 ### Step1 Mapping and counting
