@@ -1,15 +1,15 @@
 # RNA-Seq_pipeline
 A RNA-Seq pipeline
 
-### Software requirement
+## Software requirement
 - For mapping and counting: hisat2, stringtie, samtools, htseq  
 - For DEGs calculating: DESeq2, optparse  
 - For plot: FactoMineR, ggplot2, ggrepel
 
-### Pipeline workflow
+## Pipeline workflow
 ![image](https://github.com/maxuying1218/RNA-Seq_pipeline/blob/main/figures/workflow.png)
 
-### Step1 Mapping and counting
+## Step1 Mapping and counting
 [1.RNASeq_pipeline.sh](https://github.com/maxuying1218/RNA-Seq_pipeline/blob/main/1.mapping_counting/1.RNASeq_pipeline.sh) is a script to use hisat2 to map reads to reference genome and use stringtie and htseq to count FPKM/TPM and reads count.  
 [2.PCA_cal_plot.R](https://github.com/maxuying1218/RNA-Seq_pipeline/blob/main/1.mapping_counting/2.PCA_cal_plot.R) is a scirpt to do PCA and plot results using FPKM/TPM/count. Here is an example:  
 ![image](https://github.com/maxuying1218/RNA-Seq_pipeline/blob/main/figures/1.PCA_example.png)
@@ -46,7 +46,7 @@ Rscript  2.PCA_cal_plot.R -i count_matrix -o output.pdf --labels c1,c2,c3,t1,t2 
         -h, --help
                 Show this help message and exit
 ```
-### Step2 calculate DEGs
+## Step2 calculate DEGs
 [1.DESeq_pipeline.sh](https://github.com/maxuying1218/RNA-Seq_pipeline/blob/main/2.DEGs_calculating/1.DESeq_pipeline.sh) is a script to use DESeq2 R package to calculate DEGs and draw volcano plots.Here is an example:  
 ![image](https://github.com/maxuying1218/RNA-Seq_pipeline/blob/main/figures/2.DEGs_volcano_example.png)
 The code is stored at [2.DEGs_calculating](./2.DEGs_calculating).  
