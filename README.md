@@ -7,7 +7,7 @@ A RNA-Seq pipeline
 - For plot: FactoMineR, ggplot2, ggrepel
 
 ###Pipeline Workflow
-![image][https://github.com/maxuying1218/RNA-Seq_pipeline/blob/main/figures/workflow.png]
+![image](https://github.com/maxuying1218/RNA-Seq_pipeline/blob/main/figures/workflow.png)
 
 ### Step1 Mapping and counting
 [1.RNASeq_pipeline.sh](https://github.com/maxuying1218/RNA-Seq_pipeline/blob/main/1.mapping_counting/1.RNASeq_pipeline.sh) is a script to use hisat2 to map reads to reference genome and use stringtie and htseq to count FPKM/TPM and reads count.  
